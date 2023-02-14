@@ -1,0 +1,22 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import javaraytracer from './javaraytracer.jpg'
+
+export const meta = {
+  author: 'Stan Wiekstra',
+  date: '2022-10-28',
+  title: 'A raytracer I build with Java',
+  description: 'This was a school project that i enjoyed to make',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+I've build this raytracer with Java
+
+The raytracer is inspired with the book Ray Tracing in a weekend
+
+I've made an STL loader so the raytracer could load in any objects that you want. I've decided to make a render of the titanic.
+
+In this project I've learned a lot about vectors and the math behind it. I've also learned how an raytracer renders a scene.
+
+<Image src={javaraytracer} alt="" />

@@ -1,0 +1,15 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+
+export const meta = {
+  author: 'Stan Wiekstra',
+  date: '2021-05-01',
+  title: 'Serverius',
+  description: 'Internship at Serverius',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+At this internship I got the change to test my cybersecurity skills. I got the assignment to test their WAF (Web Application Firewall). I got the freedom to test their system and make a report about what was blocked and what was let trough.
+
+After that was done I've made some changes to their code and rule set in the WAF. When I was done with that I made a dashboard where you could talk to the CLI trough an API and make calls to the WAF from the dashboard online.

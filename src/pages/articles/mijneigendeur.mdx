@@ -1,0 +1,13 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+
+export const meta = {
+  author: 'Stan Wiekstra',
+  date: '2019-08-01',
+  title: 'Mijneigendeur',
+  description: 'This was my first internship',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+At this internship I got the project to remake the site mijneigendeur.nl
