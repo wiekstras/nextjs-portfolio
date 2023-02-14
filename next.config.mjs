@@ -3,24 +3,12 @@ import remarkGfm from 'remark-gfm'
 import rehypePrism from '@mapbox/rehype-prism'
 
 /** @type {import('next').NextConfig} */
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-
-let assetPrefix = ''
-let basePath = '/'
-
-if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
-}
-
 const nextConfig = {
-  assetPrefix: assetPrefix,
-  basePath: basePath,
   pageExtensions: ['jsx', 'mdx'],
   reactStrictMode: true,
+  swcMinify: true,
   experimental: {
+    newNextLinkBehavior: true,
     scrollRestoration: true,
   },
 }
