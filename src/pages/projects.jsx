@@ -12,7 +12,25 @@ const projects = [
     name: 'Java Raytracer',
     description:
       'Building a native Java Raytracer that renders the titanic',
-    link: { href: '', label: 'achmea.nl' },
+    link: { href: '', label: '' },
+  },
+  {
+    name: 'HealthMate',
+    description:
+      'Building a Web Application with security in mid, Made mostly with PHP and JS',
+    link: { href: '', label: ''}
+  },
+  {
+    name: 'Optimalisatie',
+    description:
+      'Optimise a prebuild game in C++. Optimizing it with algorithems and multi threading',
+    link: { href: '', label: ''}
+  },
+  {
+    name: 'Pizza order app',
+    description:
+      'Creating a pizza order app to learn C++, and UPD / TCP Sockets. Ordering pizza from the client and sending it to the server.',
+    link: { href: '', label: ''}
   },
   {
     name: 'Promolot',
